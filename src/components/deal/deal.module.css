@@ -1,0 +1,31 @@
+
+.dealSection{
+    display : flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height : 40rem;
+}
+
+.dealSection > div:not(.content){
+    flex : 1 1 60rem;
+}
+
+.content{
+    flex : 1 1 40rem;
+}
+
+.content h1{
+    font-size: 4rem;
+}
+
+.content p{
+    font-size : 1.5rem;
+}
+
+.countDown{
+    margin : 2rem 0;
+    width : 30rem;
+}

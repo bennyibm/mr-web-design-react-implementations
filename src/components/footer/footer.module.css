@@ -1,0 +1,85 @@
+.row{
+    display : grid;
+    grid-template-columns: repeat(4, 25rem);
+    gap :1rem;
+}
+
+.row > div{
+    padding-top : 2rem;
+    padding-bottom : 2rem;
+    padding-left : .5rem;
+}
+.links h2{
+    font-size : 2.5rem;
+}
+.nav a{
+    display : block;
+    padding : .5rem 0;
+    font-size : 1.5rem;
+    color :rgb(102, 102, 102, .7)
+}
+.nav a:hover{
+    text-decoration: underline;
+    color :green;
+    font-weight: bold;
+}
+.nav a:hover::before{
+    content: "\02C3 \2004";
+    /* padding-right : 1rem; */
+    font-size : 1.5rem;
+}
+.aboutUs p{
+    font-size : 1.5rem;
+    color : rgb(102, 102, 102, .7);
+}
+.logo{
+    color : #000;
+    font-weight: bold;
+    font-size : 3rem;
+}
+.logo:hover{
+    color : green;
+}
+.logo:hover i{
+    transform: scale(1.5);
+}
+.logo i{
+    padding-right: .5rem;
+    color : green;
+}
+
+.followUs{
+    margin-top : 1.5rem;
+}
+.followUs a.btn{
+    padding : 1rem 1.5rem;
+    margin-right: .5rem;
+}
+.followUs a.btn:hover{
+    letter-spacing: normal;
+}
+.followUs a.btn i{
+    color : #fff;
+}
+.followUs a.btn:hover i{
+    transform: scale(1.5) rotate(360deg);
+}
+
+.credit{
+    padding-top : 0
+}
+.credit p{
+    padding-top : 2rem;
+    border-top : 2px solid rgb(192, 192, 192, .3);
+    font-size : 1.5rem;
+    text-align: center;
+}
+
+.credit p a{
+    font-weight: bold;
+    font-size : 1.7rem;
+    color : green;
+}
+.credit p a:hover{
+    letter-spacing: .1rem;
+}

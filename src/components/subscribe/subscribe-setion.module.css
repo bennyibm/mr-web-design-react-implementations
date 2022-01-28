@@ -1,0 +1,41 @@
+.subcribeSection{
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height : 35rem;
+}
+.subcribeSection .form{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+.form div{
+    width : 50rem;
+    height : 5rem;
+    display : flex;
+    position : relative;
+}
+
+.form div input{
+    width : 80%;
+    height : 100%;
+    border : .2rem solid silver;
+    border-radius : .5rem;
+    padding : 1rem;
+}
+.form div input:focus{
+    border : none;
+}
+.btn{
+    position : absolute;
+    left : 79%;
+    height : 100%;
+    z-index :10;
+    display : flex;
+    align-items: center;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}

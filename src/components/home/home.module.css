@@ -1,0 +1,44 @@
+
+.home{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap ;
+}
+
+.home > *{
+    flex : 1 1 40rem;
+}
+.img{
+    padding-top : 5rem;
+}
+
+.img img{
+    width : 100%;
+}
+
+.content span{
+    font-size : 3rem;
+    color : rgb(128, 128, 128, .7);
+}
+
+.content h3{
+    font-size : 5rem;
+    color : #000;
+    margin-bottom : 1rem;
+}
+
+.content .btn{
+    font-size : 2rem;
+}
+
+
+/* media queries */
+@media(max-width : 768px){
+    .content{
+        text-align : center;
+    }
+    .content h3{
+        font-size : 4rem;
+    }
+}
