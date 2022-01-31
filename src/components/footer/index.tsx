@@ -33,36 +33,62 @@ export default function Footer() {
                 <div className={styles.links}>
                     <h2>Our Locations</h2>
                     <div className={styles.nav}>
-                        <a href="/" onClick={e => e.preventDefault()}>india</a>
-                        <a href="/" onClick={e => e.preventDefault()}>USA</a>
-                        <a href="/" onClick={e => e.preventDefault()}>japan</a>
-                        <a href="/" onClick={e => e.preventDefault()}>russia</a>
-                        <a href="/" onClick={e => e.preventDefault()}>france</a>
+                        <a href="#home" >
+                            <span>home</span>
+                        </a>
+                        <a href="#category" >
+                            <span>category</span>
+                        </a>
+                        <a href="#product" >
+                            <span>product</span>
+                        </a>
+                        <a href="#deal" >
+                            <span>deal</span>
+                        </a>
+                        <a href="#contact" >
+                            <span>contact</span>
+                        </a>
                     </div>
                 </div>
                 <div className={styles.links}>
                     <h2>quick links</h2>
                     <div className={styles.nav}>
-                        <a href="/" onClick={e => e.preventDefault()}>india</a>
-                        <a href="/" onClick={e => e.preventDefault()}>USA</a>
-                        <a href="/" onClick={e => e.preventDefault()}>japan</a>
-                        <a href="/" onClick={e => e.preventDefault()}>russia</a>
-                        <a href="/" onClick={e => e.preventDefault()}>france</a>
+                        <a href="/" onClick={e => e.preventDefault()}>
+                            <span>india</span>
+                        </a>
+                        <a href="/" onClick={e => e.preventDefault()}>
+                            <span>USA</span>
+                        </a>
+                        <a href="/" onClick={e => e.preventDefault()}>
+                            <span>japan</span>
+                        </a>
+                        <a href="/" onClick={e => e.preventDefault()}>
+                            <span>russia</span>
+                        </a>
+                        <a href="/" onClick={e => e.preventDefault()}>
+                            <span>france</span>
+                        </a>
                     </div>
                 </div>
                 <div className={styles.links}>
                     <h2>downoad app</h2>
                     <div className={styles.nav}>
-                        <a href="/" onClick={e => e.preventDefault()}>google apps</a>
-                        <a href="/" onClick={e => e.preventDefault()}>windows xp</a>
-                        <a href="/" onClick={e => e.preventDefault()}>app store</a>
+                        <a href="/" onClick={e => e.preventDefault()}>
+                            <span>google apps</span>
+                        </a>
+                        <a href="/" onClick={e => e.preventDefault()}>
+                            <span>windows xp</span>
+                        </a>
+                        <a href="/" onClick={e => e.preventDefault()}>
+                            <span>app store</span>
+                        </a>
                     </div>
                 </div>
                 
             </section>
             <section className={styles.credit}>
                 <p>
-                    created by <a href="http://benny-nkonga.com" target="_blank">benny nkonga</a> | all rights reserved!
+                    created by <a href="http://benny-nkonga.com" target="_blank" rel="noreferrer">benny nkonga</a> | all rights reserved!
                 </p>
             </section>
         </footer>

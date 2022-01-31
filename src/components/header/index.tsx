@@ -42,11 +42,11 @@ function NavBar() {
             <div ref={menuToggler} id={styles.menuToggler} onClick={toggleMobileMenu} className="fas fa-bars" />
 
             <nav ref={menu} className={styles.navBar}>
-                <a href="#home" className={styles.active}>Home</a>
-                <a href="#home">category</a>
-                <a href="#home">Product</a>
-                <a href="#home">Deal</a>
-                <a href="#home">Contat</a>
+                <a href="#home" className={styles.actie}>Home</a>
+                <a href="#category">category</a>
+                <a href="#product">Product</a>
+                <a href="#deal">Deal</a>
+                <a href="#contact">Contact</a>
             </nav>
 
             <div className={styles.icons}>

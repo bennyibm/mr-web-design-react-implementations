@@ -19,13 +19,16 @@ function CategoryItem({title, discount, imageName} : props){
 }
 export default function CategorySection() {
     return(
-        <section className={styles.categoriesContainer}>
+        <section id="category" className={styles.categoriesSection}>
             <h1 className="heading">shop by <span>category</span></h1>
 
-            <CategoryItem title="Vegitables" discount={50} imageName="category-1.png" />
-            <CategoryItem title="Juice" discount={44} imageName="category-2.png" />
-            <CategoryItem title="Meat" discount={35} imageName="category-3.png" />
-            <CategoryItem title="Fruite" discount={30} imageName="category-4.png" />
+            <div className={styles.categories}>
+                <CategoryItem title="Vegitables" discount={50} imageName="category-1.png" />
+                <CategoryItem title="Juice" discount={44} imageName="category-2.png" />
+                <CategoryItem title="Meat" discount={35} imageName="category-3.png" />
+                <CategoryItem title="Fruite" discount={30} imageName="category-4.png" />
+            </div>
+            
         </section>
     )
 };

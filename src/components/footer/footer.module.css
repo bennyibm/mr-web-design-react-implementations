@@ -1,6 +1,6 @@
 .row{
     display : grid;
-    grid-template-columns: repeat(4, 25rem);
+    grid-template-columns: repeat(4, 1fr);
     gap :1rem;
 }
 
@@ -19,14 +19,18 @@
     color :rgb(102, 102, 102, .7)
 }
 .nav a:hover{
-    text-decoration: underline;
-    color :green;
     font-weight: bold;
 }
 .nav a:hover::before{
-    content: "\02C3 \2004";
-    /* padding-right : 1rem; */
-    font-size : 1.5rem;
+    content: "\27A5 \2004";
+    /* font-size : 1.5rem; */
+    color :green;
+
+}
+.nav a:hover span{
+    text-decoration: underline;
+    color :green;
+
 }
 .aboutUs p{
     font-size : 1.5rem;
@@ -82,4 +86,16 @@
 }
 .credit p a:hover{
     letter-spacing: .1rem;
+}
+
+/* media queries */
+@media(max-width : 768px){
+    .row{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(max-width : 368px){
+    .row{
+        grid-template-columns: 1fr;
+    }
 }

@@ -69,6 +69,7 @@
 }
 .navBar.active{
     display : initial;
+    background-color: #fff;
 }
 .navBar a{
     padding : .5rem 1.5rem;

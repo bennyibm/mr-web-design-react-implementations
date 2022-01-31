@@ -1,6 +1,6 @@
 
 .form{
-    flex : 1;
+    /* flex : 1; */
     display : flex;
     flex-wrap: wrap;
     gap : 1rem;
@@ -48,4 +48,20 @@ input:focus::placeholder, textarea:focus::placeholder{
 .btn{
     flex : 1;
     display : block;
+}
+
+@media(max-width : 868px){
+    .form{
+        padding : 0;
+        border: none;
+    }
+}
+@media(max-width : 568px){
+    .contactForm{
+        /* height: 50rem; */
+        padding-bottom : 12rem;
+    }
+    .inputBox{
+        flex : 1 1 100%;
+    }
 }

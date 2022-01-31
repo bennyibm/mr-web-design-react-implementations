@@ -12,6 +12,7 @@
     padding : 1rem;
     /* height : 40rem; */
     border : 3px solid rgba(192, 192, 192, .2);
+    overflow: hidden;
 }
 
 .product img{
@@ -24,7 +25,10 @@
 
 .product:hover img{
     object-fit: contain;
-    transform: scale(1.5) rotate(90deg);
+    transform: scale(1.1) rotate(90deg);
+}
+.product:hover .actions{
+    right : .5rem;
 }
 .product h2{
     font-size : 2rem;
@@ -65,15 +69,20 @@
 }
 .actions{
     position : absolute;
-    top : 1rem; right : .5rem;
-    display : flex;
+    display: flex;
+    top : 1rem; right : -5rem;
     flex-direction: column;
     justify-content: space-between;
-    height : 12rem;
+    background-color: rgba(153, 153, 153, .1);
+    box-shadow: -.3rem .3rem .3rem rgb(0, 128, 0, .1);
+    border-radius: 5rem;
+    /* height : 15rem; */
+    padding : 1rem .5rem;
 }
 
 .actions a{
     padding : 1rem;
+    margin : .5rem 0;
     border-radius: 50%;
     background-color: rgb(0, 128, 0, .1);
     font-size : 1.2rem;

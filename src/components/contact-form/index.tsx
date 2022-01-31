@@ -5,7 +5,7 @@ import styles from "./contact-form.module.css"
 export default function ContactForm() {
     const form = useRef<HTMLFormElement | null>(null)
     return(
-        <section className={styles.contactForm}>
+        <section id="contact" className={styles.contactForm}>
             <h1 className="heading">contact <span>us</span></h1>
             <form ref={form} className={styles.form}>
                 <div className={styles.inputBox}>

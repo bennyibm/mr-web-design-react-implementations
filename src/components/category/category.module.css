@@ -1,11 +1,14 @@
 
-.categoriesContainer{
-    display : flex;
-    justify-content: center;
+.categoriesSection{
+    /* padding-bottom: 4rem; */
+    
+}
+
+.categories{
+    display: flex;
     flex-wrap: wrap;
     gap : 5px;
 }
-
 .category{
     flex : 1 1 20rem;
     text-align : center;
@@ -40,10 +43,6 @@
     .category{
         flex : 1 1 40%;
         padding : 2rem;
-    }
-    .btn{
-        padding-top : 2rem;
-        padding-bottom : 2rem;    
     }
 }
 

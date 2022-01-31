@@ -5,12 +5,12 @@ export default function SubscribeSection() {
     const form = useRef<HTMLFormElement | null>(null)
 
     return(
-        <section className={styles.subcribeSection} style={{backgroundImage : "url(/img/newsletter-bg.jpg)"}}>
+        <section id="subscribe" className={styles.subcribeSection} style={{backgroundImage : "url(/img/newsletter-bg.jpg)"}}>
             <h1 className="heading">subscribe for <span>latest update</span></h1>
             <form ref={form} className={styles.form}>
                 <div>
                     <input placeholder="enter your email"/>
-                    <a className={`btn ${styles.btn}`} href="/" onClick={e => e.preventDefault()} >subscribt</a>
+                    <button className={`btn ${styles.btn}`} onClick={e => e.preventDefault()} >subscribe</button>
                 </div>
             </form>
         </section>

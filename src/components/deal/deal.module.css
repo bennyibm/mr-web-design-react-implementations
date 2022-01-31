@@ -1,20 +1,17 @@
 
 .dealSection{
-    display : flex;
-    align-items: center;
-    flex-wrap: wrap;
+    display : grid;
+    grid-template-columns: 1fr 1fr;
+    height : 40rem;
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
-    height : 40rem;
-}
-
-.dealSection > div:not(.content){
-    flex : 1 1 60rem;
 }
 
 .content{
-    flex : 1 1 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .content h1{
@@ -23,9 +20,91 @@
 
 .content p{
     font-size : 1.5rem;
+    text-align: justify;
 }
 
-.countDown{
+.countDownArea{
+    /* flex : 1; */
     margin : 2rem 0;
-    width : 30rem;
+    padding-right: 10rem;
+    /* width : 30rem; */
+    /* display: block; */
+}
+
+@media(max-width : 563px){
+    .dealSection{
+        grid-template-columns: 1fr;
+    }
+    .content p{
+        padding-right: 17rem;
+    }
+    .countDownArea{
+        padding-right: 0;
+    }
+}
+
+@media(max-width : 540px){
+    .content p{
+        padding-right: 16rem;
+    }
+}
+
+@media(max-width : 520px){
+    .content p{
+        padding-right: 14rem;
+    }
+}
+
+@media(max-width : 500px){
+    .content p{
+        padding-right: 13rem;
+    }
+}
+
+@media(max-width : 480px){
+    .content p{
+        padding-right: 12rem;
+    }
+}
+
+@media(max-width : 460px){
+    .content p{
+        padding-right: 11rem;
+    }
+}
+
+@media(max-width : 440px){
+    .content p{
+        padding-right: 10rem;
+    }
+}
+
+@media(max-width : 420px){
+    .content p{
+        padding-right: 9rem;
+    }
+}
+
+@media(max-width : 400px){
+    .content p{
+        padding-right: 8rem;
+    }
+}
+@media(max-width : 380px){
+    .content p{
+        padding-right: 7rem;
+    }
+}
+
+@media(max-width : 340px){
+    .dealSection {
+        background-position:left ;
+        flex-direction: column;
+    }
+    .content p{
+        padding-right: 1rem;
+    }
+    .countDownArea{
+        width: 100%;
+    }
 }
