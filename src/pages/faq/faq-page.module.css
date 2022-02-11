@@ -1,0 +1,41 @@
+.faqPage .container .content{
+    display: flex;
+    flex-wrap: wrap;
+    gap : 1rem
+}
+
+.faqPage .container .content .col{
+    flex : 1 1 300px;
+}
+.faqPage .container .content .col details{
+    margin : 1rem 0;
+}
+.faqPage .container .content .col details summary{
+    padding : 1rem;
+    color : #000;
+    font-size : 1.7rem;
+    cursor : pointer;
+    list-style: none;
+    position: relative;
+    border-bottom: .2rem solid rgba(0, 128, 0, .1);
+    background-color: rgba(238, 238, 238, 0.26);
+}
+.faqPage .container .content .col details[open] summary{
+    background-color: rgba(238, 238, 238, 0.733);
+}
+.faqPage .container .content .col details summary::after{
+    content: "+";
+    position: absolute;
+    right : 1rem;
+    transform: scale(1.5);
+    transition: all .3s linear;
+
+}
+.faqPage .container .content .col details[open] summary::after{
+    position: absolute;
+    transform: scale(1.5) rotate(135deg);
+}
+.faqPage .container .col details p{
+    padding : 1rem;
+    /* background-color: rgba(0, 128, 0, 0.219); */
+}
