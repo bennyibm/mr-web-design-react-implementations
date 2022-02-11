@@ -1,34 +1,19 @@
 import React from 'react';
+import { Category } from '../../model';
 import styles from "./category.module.css"
 
 type props = {
-    title : string,
-    discount : number,
-    imageName : string,
+    category : Category
 }
-function CategoryItem({title, discount, imageName} : props){
-
+export default function CategoryCard({category} : props){
+    const {title, discount, image} = category
+    
     return(
         <div className={styles.category}>
             <h3>{title}</h3>
             <p>upto {discount}% off</p>
-            <img src={`/img/${imageName}`} alt={title} />
+            <img src={`/img/${image}`} alt={title} />
             <a href="/" className={`btn ${styles.btn}`} onClick={e => e.preventDefault()}>shop now</a>
         </div>
     )
 }
-export default function CategorySection() {
-    return(
-        <section id="category" className={styles.categoriesSection}>
-            <h1 className="heading">shop by <span>category</span></h1>
-
-            <div className={styles.categories}>
-                <CategoryItem title="Vegitables" discount={50} imageName="category-1.png" />
-                <CategoryItem title="Juice" discount={44} imageName="category-2.png" />
-                <CategoryItem title="Meat" discount={35} imageName="category-3.png" />
-                <CategoryItem title="Fruite" discount={30} imageName="category-4.png" />
-            </div>
-            
-        </section>
-    )
-};

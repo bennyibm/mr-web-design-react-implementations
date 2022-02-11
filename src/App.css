@@ -13,21 +13,25 @@
 
 * {
   font-family: 'Nunito', sans-serif;
+  font-size : 1.5rem;
   text-decoration: none;
   margin : 0; padding : 0;
   box-sizing: border-box;
   outline: none; border : none;
   text-transform: capitalize;
+  user-select: none;
   transition : all .2s linear;
   color : var(--black);
+  font-weight: normal;
 }
+
 
 *::selection{
   background : var(--green);
   color: var(--white);
 }
 html{
-  font-size : 62.5%;
+  font-size : 65.5%;
   overflow-x: hidden;
   scroll-padding-top: 6.5rem;
   scroll-behavior: smooth;
@@ -45,16 +49,16 @@ section{
 .btn{
   background-color: var(--green);
   color : var(--white);
-  padding: .8rem 3rem;
-  font-size : 1.7rem;
+  padding: .5rem 3rem;
+  font-size : 1.5rem;
   text-align: center;
-  border-radius: var(--border-radius);
+  /* border-radius: var(--border-radius); */
   cursor : pointer;
 }
 
 .btn:hover{
   letter-spacing: .2rem;
-  font-weight: bold;
+  /* font-weight: bold; */
   background: var(--black);
 }
 
@@ -63,17 +67,18 @@ body{
 }
 
 
-h1.heading{
+h1.heading,
+h1.heading span{
   margin : 2rem 0;
-  font-size : 4rem;
+  font-size : 3rem;
   text-align: center;
   text-transform: uppercase;
+  font-weight: bold;
 
 }
 
 h1.heading span{
   color : var(--green);
-  text-transform: uppercase;
 }
 /* media queries */
 @media(max-width : 1200px){

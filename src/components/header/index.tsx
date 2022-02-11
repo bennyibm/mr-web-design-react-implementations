@@ -1,4 +1,5 @@
 import React, { MouseEvent, useCallback, useEffect, useRef } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import styles from "./header.module.css"
 
 function TopBar() {
@@ -15,6 +16,20 @@ function TopBar() {
         </div>
     )
 }
+
+
+function NavItem({label, link} : {label : string, link? : string}){
+    if(!link)
+        link = label.toLowerCase()
+
+    const {pathname} = useLocation()
+    const isActive = pathname.endsWith(link)
+
+    return(
+        <Link to={link} className={`${isActive && styles.active}`}>{label}</Link>
+    )
+}
+
 
 function NavBar() {
     const navBar = useRef<HTMLDivElement | null>(null)
@@ -42,16 +57,14 @@ function NavBar() {
             <div ref={menuToggler} id={styles.menuToggler} onClick={toggleMobileMenu} className="fas fa-bars" />
 
             <nav ref={menu} className={styles.navBar}>
-                <a href="#home" className={styles.actie}>Home</a>
-                <a href="#category">category</a>
-                <a href="#product">Product</a>
-                <a href="#deal">Deal</a>
-                <a href="#contact">Contact</a>
+                <NavItem label="home" link="/" />
+                <NavItem label="shop" />
+                <NavItem label="faq" />
+                <NavItem label="contact" />
             </nav>
 
             <div className={styles.icons}>
                 <a href="/" ><i className="fas fa-shopping-cart" /></a>
-                <a href="/" ><i className="fas fa-heart" /></a>
                 <a href="/" ><i className="fas fa-user" /></a>
             </div>
         </div>

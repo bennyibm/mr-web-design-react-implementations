@@ -1,37 +1,37 @@
 
-.home{
+.banner{
     display : flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap ;
+    min-height: calc(100vh - 10rem);
 }
 
-.home > *{
+.banner > *{
     flex : 1 1 40rem;
 }
-.img{
-    padding-top : 5rem;
+.home .img{
+    display : flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.img img{
+.home .img img{
     width : 100%;
+    object-fit: cover;
 }
 
-.content span{
+.home .content span{
     font-size : 3rem;
     color : rgb(128, 128, 128, .7);
 }
 
-.content h3{
+.home .content h3{
     font-size : 5rem;
     color : #000;
     margin-bottom : 1rem;
+    font-weight: bold;
 }
-
-.content .btn{
-    font-size : 2rem;
-}
-
 
 /* media queries */
 @media(max-width : 768px){

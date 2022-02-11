@@ -1,13 +1,11 @@
 import Header from './header';
 import Footer from './footer/index';
-import BannerSection from './banner/index';
-import HomeSection from './home/index';
-import CategorySection from './category/index';
-import ProductSection from './product/index';
+import ProductCard from './product/index';
 import Rating from './rating/index';
-import DealSection from './deal/index';
 import ContactForm from './contact-form/index';
-import SubscribeSection from './subscribe/subscribe-section';
+import BreadcrumbHero from './breadcrumb-hero/index';
+import CategoryCard from './category/index';
+import CountDown from './count-down/index';
 
 
-export {Header, Footer, HomeSection , BannerSection, CategorySection, ProductSection, Rating, DealSection, ContactForm, SubscribeSection}
+export {Header, Footer, CountDown, BreadcrumbHero,  CategoryCard, ProductCard, Rating, ContactForm}

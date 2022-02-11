@@ -1,0 +1,238 @@
+.bannerSection{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap ;
+    min-height: calc(100vh - 10rem);
+}
+
+.bannerSection > *{
+    flex : 1 1 40rem;
+}
+.bannerSection .img{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bannerSection .img img{
+    width : 100%;
+    object-fit: cover;
+}
+
+.bannerSection .content span{
+    font-size : 3rem;
+    color : rgb(128, 128, 128, .7);
+}
+
+.bannerSection .content h3{
+    font-size : 5rem;
+    color : #000;
+    margin-bottom : 1rem;
+    font-weight: bold;
+}
+
+.offerSection{
+    display : flex;
+    flex-wrap: wrap;
+    gap : 1.5rem;
+}
+
+.offerSection .offer{
+    flex : 1 1 40rem;
+    height : 25rem;
+    overflow: hidden;
+    position : relative;
+}
+
+.offerSection .offer img{
+    width : 100%;
+    height : 100%;
+    object-fit: cover;
+}
+.offerSection .offer:hover img{
+    transform: scale(1.4) rotate(-5deg);
+}
+.offerSection .offer .content{
+    position: absolute;
+    top : 50%; left : 4%;
+    transform : translateY(-50%);
+    padding : 1rem;
+}
+
+.offerSection .offer .content h3{
+    font-size : 2.5rem;
+    /* font-weight: bold; */
+}
+.offerSection .offer .content p{
+    /* font-size : 2rem; */
+    color : #666;
+    margin-bottom: 1rem;
+}
+
+.categorySection .container{
+    display : grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap : 1rem;
+}
+
+.productSection .container{
+    display : flex;
+    flex-wrap : wrap;
+    gap: 1rem;
+}
+
+.dealSection{
+    display : grid;
+    grid-template-columns: 1fr 1fr;
+    height : 40rem;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.dealSection .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.dealSection .content h1{
+    font-size: 4rem;
+}
+.dealSection .content p{
+    font-size : 1.5rem;
+    text-align: justify;
+}
+.dealSection .countDownArea{
+    /* flex : 1; */
+    margin : 2rem 0;
+    padding-right: 10rem;
+    /* width : 30rem; */
+    /* display: block; */
+}
+
+.subcribeSection{
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height : 35rem;
+}
+.subcribeSection .form{
+    width: 100%;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+.subcribeSection .form div{
+    width : 100%;
+    position : relative;
+}
+
+.subcribeSection .form div input{
+    width : 80%;
+    height : 5rem;
+    border : .2rem solid silver;
+    border-radius : .5rem;
+    padding : 1rem;
+}
+.subcribeSection .form div input:focus{
+    border : none;
+}
+.subcribeSection form div .btn{
+    position : absolute;
+    top : 0; left : 79%;
+    width : 21%;
+    height : 5rem;
+    z-index :10;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+
+
+/* media queries */
+
+@media(max-width : 1500px){
+    
+    .offerSection .offer:hover img{
+        transform: scale(1.2) rotate(-5deg);
+    }
+}
+
+@media(max-width : 991px){
+    .subcribeSection{
+        background-position: left;
+    }
+  }
+@media(max-width : 868px){
+    .subcribeSection .form div{
+        height : 10rem;
+    }
+    .subcribeSection .form div input{
+        width : 100%;
+    }
+    .subcribeSection form div .btn{
+        top : 55%; left: -50% ; right: -50%;
+        margin: auto;
+        border-radius : .5rem;
+        width : 100%;
+    }
+}
+
+/* media queries */
+@media(max-width : 768px){
+    .content{
+        text-align : center;
+    }
+    .content h3{
+        font-size : 4rem;
+    }
+}
+
+@media(max-width : 563px){
+    .dealSection{
+        grid-template-columns: 1fr;
+    }
+    .dealSection .content p{
+        padding-right: 17rem;
+    }
+    .dealSection .countDownArea{
+        padding-right: 0;
+    }
+}
+
+
+@media(max-width : 540px){
+    .dealSection .content p{
+        padding-right: 16rem;
+    }
+}
+
+@media(max-width : 520px){
+    .dealSection .content p{
+        padding-right: 14rem;
+    }
+}
+
+@media(max-width : 500px){
+    .dealSection .content p{
+        padding-right: 13rem;
+    }
+}
+
+@media(max-width : 480px){
+    .dealSection .content p{
+        padding-right: 12rem;
+    }
+}
+
+@media(max-width : 460px){
+    .dealSection .content p{
+        padding-right: 11rem;
+    }
+}

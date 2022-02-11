@@ -1,10 +1,4 @@
 
-.container{
-    display : flex;
-    flex-wrap : wrap;
-    gap: 1rem;
-}
-
 .product{
     text-align : center;
     position :relative;
@@ -13,6 +7,22 @@
     /* height : 40rem; */
     border : 3px solid rgba(192, 192, 192, .2);
     overflow: hidden;
+}
+
+.actions{
+    position : absolute;
+    display: flex;
+    top : 1rem; right : .5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: -.3rem .3rem .3rem rgb(0, 128, 0, .1);
+    border-radius: 5rem;
+    padding : 1rem .5rem;
+    transform : translateX(10rem);
+}
+.product:hover .actions{
+    transform : translateX(0);
 }
 
 .product img{
@@ -24,11 +34,7 @@
 }
 
 .product:hover img{
-    object-fit: contain;
-    transform: scale(1.1) rotate(90deg);
-}
-.product:hover .actions{
-    right : .5rem;
+    transform: rotate(45deg);
 }
 .product h2{
     font-size : 2rem;
@@ -67,19 +73,6 @@
     font-size : 1.2rem;
     font-weight: bold;
 }
-.actions{
-    position : absolute;
-    display: flex;
-    top : 1rem; right : -5rem;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: rgba(153, 153, 153, .1);
-    box-shadow: -.3rem .3rem .3rem rgb(0, 128, 0, .1);
-    border-radius: 5rem;
-    /* height : 15rem; */
-    padding : 1rem .5rem;
-}
-
 .actions a{
     padding : 1rem;
     margin : .5rem 0;

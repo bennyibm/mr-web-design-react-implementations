@@ -24,31 +24,37 @@
 .logo i{
     padding-right: .5rem;
     color : green;
+    font-size : 3rem;
 }
 
 .searchBoxContainer{
     display : flex;
+    width : 40rem;
     align-items: center;
-    height : 5rem;
+    height : 4rem;
 }
 
 .searchBoxContainer #searchBox{
     height : 100%;
     width : 100%;
     padding : 1rem;
-    font-size: 2rem;
+    /* font-size: 2rem; */
     color : #333;
     border : .1rem solid rgba(0,0,0, .3)
 }
-
+.searchBoxContainer #searchBox:focus{
+    color : white
+}
 .searchBoxContainer label{
     height : 100%;
-    width : 8rem;
-    font-size : 2.5rem;
-    line-height: 5rem;
+    /* width : 8rem; */
+    /* font-size : 2.5rem; */
+    /* line-height: 5rem; */
     color : white;
     background-color: green;
-    text-align: center;
+    /* text-align: center; */
+    display : flex; align-items: center;
+    padding : 0 1rem; 
     cursor: pointer;
 }
 
@@ -73,8 +79,6 @@
 }
 .navBar a{
     padding : .5rem 1.5rem;
-    font-size : 2rem;
-    border-radius : .5rem;
     margin : 0 .2rem;
 }
 .navBar a:hover, .navBar a.active{
@@ -84,10 +88,8 @@
 
 .navBar a.active{
     font-weight: bold;
-    /* border-bottom: 3px solid rgb(0, 128, 0, .5); */
 }
 .icons a{
-    font-size : 2.5rem;
     padding-left : 1rem;
 }
 

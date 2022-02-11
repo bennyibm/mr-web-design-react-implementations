@@ -1,0 +1,15 @@
+.breadcrumbHero{
+    min-height : 25rem;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.breadcrumbHero h3{
+    font-size : 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: .2rem .2rem .2rem #fff;
+}
