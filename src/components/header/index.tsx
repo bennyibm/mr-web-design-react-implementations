@@ -64,8 +64,8 @@ function NavBar() {
             </nav>
 
             <div className={styles.icons}>
-                <a href="/" ><i className="fas fa-shopping-cart" /></a>
-                <a href="/" ><i className="fas fa-user" /></a>
+                <button className="fas fa-shopping-cart" />
+                <button className="fas fa-user" />
             </div>
         </div>
     )

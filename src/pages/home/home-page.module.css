@@ -82,6 +82,11 @@
     gap: 1rem;
 }
 
+.productSection .btn{
+    display: block;
+    margin: 1rem auto;
+    width: fit-content;
+}
 .dealSection{
     display : grid;
     grid-template-columns: 1fr 1fr;

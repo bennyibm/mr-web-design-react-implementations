@@ -1,6 +1,7 @@
 import React, {useCallback, useRef} from 'react';
 import styles from "./home-page.module.css";
 import {ProductCard, CategoryCard, CountDown } from '../../components';
+import { Link } from 'react-router-dom';
 
 export default function HomePage() {
 
@@ -69,10 +70,8 @@ export default function HomePage() {
                     <ProductCard product={{title : "organic banana", rate : 4.5, discount : 33, price : 10.50, image : "/img/product-1.png"}} />
                     <ProductCard product={{title : "organic tomato", rate : 4.5, discount : 14, price : 17, image : "/img/product-2.png"}} />
                     <ProductCard product={{title : "organic orange", rate : 3.5, discount : 10, price : 25, image : "/img/product-3.png"}} />
-                    <ProductCard product={{title : "organic milk", rate : 4.5, discount : 33, price : 47, image : "/img/product-2.png"}} />
-                    <ProductCard product={{title : "organic grapes", rate : 4.5, discount : 33, price : 47, image : "/img/product-2.png"}} />
-                    <ProductCard product={{title : "organic almonds", rate : 4.5, discount : 33, price : 47, image : "/img/product-2.png"}} />
                 </div>
+                <Link to="/shop" className={`btn ${styles.btn}`}>see more</Link>
             </section>
         )
     }, [])

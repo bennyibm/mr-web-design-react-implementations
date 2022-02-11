@@ -1,7 +1,7 @@
-import ProductsPage from './product/index';
+import ProductsPage from './product';
 import HomePage from './home/home';
-import FaqPage from './faq/index';
-import ContactPage from './contact/index';
-import PageNotFound from './page-not-found/index';
+import FaqPage from './faq';
+import ContactPage from './contact';
+import PageNotFound from './page-not-found';
 
 export {HomePage, ProductsPage, FaqPage, ContactPage, PageNotFound}

@@ -29,9 +29,10 @@ export default function ProductCard({product} : props){
                     <i className="fas fa-eye" />
                 </a>
             </div>
-            <img src={`${image}`} alt={title}/>
+            <div className={styles.image}>
+                <img src={image} alt={title}/>
+            </div>
             <h2>{title}</h2>
-
             <div className={styles.rating}>
                 <Rating />
             </div>

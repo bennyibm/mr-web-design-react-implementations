@@ -1,5 +1,5 @@
 
-.form{
+.contactPage section form.form{
     /* flex : 1; */
     display : flex;
     flex-wrap: wrap;
@@ -9,50 +9,71 @@
     padding : 2rem;
 }
 
-.inputBox{
+.contactPage section form.form .inputBox{
     flex : 1 1 45%;
     height: 5rem;
     border : 3px solid rgba(192,192, 192, .3)
 }
-.textArea{
+.contactPage section form.form .textArea{
     /* flex : 1; */
     /* display : block; */
     width : 100%;
     height : 20rem;
     border : 3px solid rgba(192,192, 192, .3);
 }
-.inputBox, .textArea{
+.contactPage section form.form .inputBox, 
+.contactPage section form.form .textArea{
     border-radius: .5rem;
 }
 
-.inputBox input{
+.contactPage section form.form .inputBox input{
     width : 100%;
     height : 100%;
     padding : 1rem;
 }
 
-
-.textArea textarea{
+.contactPage section form.form .textArea textarea{
     
     width : 100%; height: 100%;
     padding : 1rem;
 }
 
-input:focus, textarea:focus{
-    background-color: rgb(0, 128, 0, .8);
+.contactPage section form.form input:focus,
+.contactPage section form.form textarea:focus{
+    /* background-color: rgb(0, 128, 0, .8); */
     color : #fff;
 }
-input:focus::placeholder, textarea:focus::placeholder{
+.contactPage section form.form input:focus::placeholder, 
+.contactPage section form.form textarea:focus::placeholder{
     color : #fff;
 }
-.btn{
+.contactPage section form.form .btn{
     flex : 1;
-    display : block;
     padding : 1rem 2rem;
 }
 
+.contactPage .info{
+    width : 100%;
+    height : 6rem;
+    align-items: center;
+    justify-content: center;
+    color : #fff;
+    font-size: 2rem;
+    display: none;
+}
+
+.contactPage .info.success{
+    background-color: rgba(0, 128, 0, 0.582);
+    display: flex;
+}
+.contactPage .info.danger{
+    background-color: rgba(255, 0, 0, 0.486);
+    display: flex;
+}
+
+
 @media(max-width : 868px){
-    .form{
+    .contactPage section form.form{
         padding : 0;
         border: none;
     }
@@ -62,7 +83,7 @@ input:focus::placeholder, textarea:focus::placeholder{
         /* height: 50rem; */
         padding-bottom : 12rem;
     }
-    .inputBox{
+    .contactPage section form.form .inputBox{
         flex : 1 1 100%;
     }
 }
